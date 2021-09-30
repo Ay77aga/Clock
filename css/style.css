@@ -67,6 +67,7 @@ section .sec::after {
   color: lime;
   background: rgba(0, 0, 0, .7);
   font-weight: 900;
+  z-index: 99;
   animation: sc .5s infinite linear alternate;
 
 }
