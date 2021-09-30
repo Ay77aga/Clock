@@ -72,9 +72,11 @@ span[3].innerHTML = '9';
 
 //  years
 let day = time.getDay();
-let month = time.getMonth();
+let month = time.getMonth()+1;
 let year = time.getFullYear();
 
+console.log(day);
+console.log(month);
 let article = document.createElement('article');
 for (let i = 0; i < 3; i++) {
   let artspan = document.createElement('span');
@@ -82,14 +84,13 @@ for (let i = 0; i < 3; i++) {
 }
 document.body.appendChild(article);
 let ymd = document.querySelectorAll('article:last-child span');
-let days = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-ymd[0].innerHTML = days[day + 1] + ` (${day +1})`;
-ymd[1].innerHTML = month;
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+ymd[0].innerHTML = days[day] + ` (${time.getDate()})`;
+ymd[1].innerHTML = months[month-1] + ` (${month})`;
 ymd[2].innerHTML = year;
 
 ymd[0].setAttribute('data', 'Day');
 ymd[1].setAttribute('data', 'Month');
 ymd[2].setAttribute('data', 'Year');
-
-
-console.log(day)

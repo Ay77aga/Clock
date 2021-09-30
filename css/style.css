@@ -35,7 +35,7 @@ body section::after {
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(1.5);
   background: lime;
-  z-index: 999;
+  z-index: 10;
 }
 
 
@@ -49,7 +49,7 @@ section .hours {
   border-radius: 4rem;
   position: absolute;
   transform-origin: bottom center;
-  z-index: 9;
+  z-index: ;
   top: 25px;
   transition: .5s ;
 
@@ -187,11 +187,11 @@ article:last-child span:not(:first-child) {
   font-size: 40px;
 }
 
-article:last-child span:first-child {
-  font-size: 20px;
+article:last-child span:first-child,
+article:last-child span:nth-child(2){
+  font-size: 22px;
+  padding: 5px;
 }
-
-
 
 
 @media (min-width: 786px) {
@@ -204,8 +204,8 @@ article:last-child span:first-child {
     font-size: 80px;
   }
 
-  article:last-child span:first-child {
-    font-size: 50px;
+  article:last-child span:first-child{
+    font-size: 40px;
   }
 article span::before {
  font-size: 40px;
