@@ -52,7 +52,7 @@ let s = setInterval(_ => {
     ++ho;
     ++hours;
   }
-}, 990);
+}, 1000);
 
 for (let i = 0; i < 4; i++) {
   let t_c = document.createElement('span');
