@@ -194,7 +194,7 @@ article:last-child span {
 
 @media (min-width: 786px) {
   body section {
-    transform: scale(2.5);
+    transform: scale(1.5);
   }
 article:last-child span {
   font-size: 38px;
